@@ -5,11 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8cfc11e-4255-4e3c-8403-d4339905eef5" name="Default Changelist" comment="create AssemblyBrowserLib">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/View.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/View/View.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="d8cfc11e-4255-4e3c-8403-d4339905eef5" name="Default Changelist" comment="add MVVM pattern" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,10 +19,12 @@
     <setting file="file://$PROJECT_DIR$/Tests/Tests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AssemblyBrowserLib/MemberInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AssemblyBrowserLib/Container.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/View/ViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AssemblyBrowserLib/AssemblyBrowser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AssemblyBrowserLib/format/PropertiesFormatter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/App.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/View/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/View/OpenFileCommand.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -40,6 +38,10 @@
         <option value="$PROJECT_DIR$/AssemblyBrowserLib/Class1.cs" />
         <option value="$PROJECT_DIR$/Tests/Class1.cs" />
         <option value="$PROJECT_DIR$/Tests/Tests.cs" />
+        <option value="$PROJECT_DIR$/View/OpenFileCommand.cs" />
+        <option value="$PROJECT_DIR$/AssemblyBrowserLib/AssemblyBrowser.cs" />
+        <option value="$PROJECT_DIR$/View/ViewModel.cs" />
+        <option value="$PROJECT_DIR$/View/MainWindow.xaml" />
       </list>
     </option>
   </component>
@@ -85,6 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603912389293</updated>
       <workItem from="1603912400075" duration="1412000" />
+      <workItem from="1603913856431" duration="294000" />
     </task>
     <task id="LOCAL-00001" summary="create AssemblyBrowserLib">
       <created>1603913559060</created>
@@ -93,13 +96,20 @@
       <option name="project" value="LOCAL" />
       <updated>1603913559060</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add MVVM pattern">
+      <created>1603914148947</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603914148947</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -111,12 +121,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="create architecture" />
     <MESSAGE value="create AssemblyBrowserLib" />
-    <option name="LAST_COMMIT_MESSAGE" value="create AssemblyBrowserLib" />
+    <MESSAGE value="add MVVM pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="add MVVM pattern" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="272" key="Rider.ProjectTemplateDialog.Size" timestamp="1603913432981">
