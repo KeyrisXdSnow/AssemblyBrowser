@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="800" Width="1200">
+    <Window.DataContext>
+        <local:ModelView/>
+    </Window.DataContext>
     <Grid>
-        
+        <Grid>
+            <DockPanel>  
+                <Button  Foreground="White" Margin="465,0" FontSize="16" BorderBrush="#FFAC2020" FontWeight="Bold" DockPanel.Dock="Top" Height="85" Command="{Binding OpenFileCommand}" >
+                    <Button.OpacityMask>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.OpacityMask>
+                    <Button.Background>
+                        <ImageBrush ImageSource="E:\Sharaga\SPP\A\AssemblyBrowser\View\Fkg_ODrcv0w.jpg"/>
+                    </Button.Background> Open
+                </Button>
+                
+                <TreeView ItemsSource="{Binding Path=Namespaces}" FontSize="20" FontFamily="Century Gothic" OpacityMask="Black" Foreground="#FFAA2D2D" Margin="0,22,0,10" Width="1174">
+                    <TreeView.ItemTemplate>
+                        <HierarchicalDataTemplate ItemsSource="{Binding Path=Members}">
+                            <TextBlock Text="{Binding Signature, UpdateSourceTrigger=PropertyChanged}" />
+                        </HierarchicalDataTemplate>
+                    </TreeView.ItemTemplate>
+                </TreeView>
+            </DockPanel>
+        </Grid>
     </Grid>
 </Window>

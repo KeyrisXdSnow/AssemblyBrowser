@@ -8,7 +8,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		|Any CPU = |Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3034A85-383B-4CF1-9B5C-C2E3F2BD2922}.|Any CPU.ActiveCfg = |Any CPU
+		{F3034A85-383B-4CF1-9B5C-C2E3F2BD2922}.|Any CPU.Build.0 = |Any CPU
+		{F3034A85-383B-4CF1-9B5C-C2E3F2BD2922}.|Any CPU.Deploy.0 = |Any CPU
+		{1C8CB6E3-5C9E-4A86-BC82-4743DDD17D4A}.|Any CPU.ActiveCfg = |Any CPU
+		{1C8CB6E3-5C9E-4A86-BC82-4743DDD17D4A}.|Any CPU.Build.0 = |Any CPU
+		{1C8CB6E3-5C9E-4A86-BC82-4743DDD17D4A}.|Any CPU.Deploy.0 = |Any CPU
+		{D2A0FE30-6A40-4B61-8925-C092E32D6766}.|Any CPU.ActiveCfg = |Any CPU
+		{D2A0FE30-6A40-4B61-8925-C092E32D6766}.|Any CPU.Build.0 = |Any CPU
+		{D2A0FE30-6A40-4B61-8925-C092E32D6766}.|Any CPU.Deploy.0 = |Any CPU
 	EndGlobalSection
 EndGlobal

@@ -39,13 +39,14 @@
         <e p="App.xaml" t="Include" />
         <e p="App.xaml.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Fkg_ODrcv0w.jpg" t="Include" />
         <e p="MainWindow.xaml" t="Include" />
         <e p="MainWindow.xaml.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="App.g.cs" t="Include" />
-            <e p="MainWindow.g.cs" t="Include" />
-          </e>
+          <e p="App.g.cs" t="Include" />
+          <e p="GeneratedInternalTypeHelper.g.cs" t="Include" />
+          <e p="MainWindow.g.cs" t="Include" />
+          <e p="View_Content.g.cs" t="Include" />
         </e>
         <e p="OpenFileCommand.cs" t="Include" />
         <e p="Properties" t="Include">
