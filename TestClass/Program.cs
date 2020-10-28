@@ -8,7 +8,7 @@ namespace TestClass
         
         public static void Main(string[] args)
         {
-            var assemblyInfo = Browser.GetAssemblyInfo("E:\\Sharaga\\SPP\\Laba3\\AssemblyBrowser\\Test\\TestFiles\\TestClass.exe");
+            var assemblyInfo = Browser.GetAssemblyInfo("E:\\Sharaga\\SPP\\A\\AssemblyBrowser\\Tests\\Resources\\TestClass.exe");
             
         }
         

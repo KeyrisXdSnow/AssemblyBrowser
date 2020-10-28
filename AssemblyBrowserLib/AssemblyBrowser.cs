@@ -26,17 +26,11 @@ namespace AssemblyBrowserLib
 
                     assemblyInfo.TryGetValue(type.Namespace, out var container);
 
+                    container.Members.Add(GetMembers(type));
+                    
                     if (type.IsDefined(typeof(ExtensionAttribute), false))
-                    {
-                        container.Members.Add(GetMembers(type));
-                        assemblyInfo = assemblyInfo.Concat(GetExtensionNamespaces(type))
-                            .ToDictionary(x => x.Key, x => x.Value);
-                    }
-                    else
-                    {
-                        container.Members.Add(GetMembers(type));
-                    }
-
+                        assemblyInfo = GetExtensionNamespaces(type,assemblyInfo);
+                    
                 }
                 catch (NullReferenceException e) { Console.WriteLine(e.StackTrace); }
             }
@@ -44,8 +38,9 @@ namespace AssemblyBrowserLib
             return assemblyInfo.Values.ToList();
         }
         
-        private static Dictionary<string, Container> GetExtensionNamespaces(Type classType)
+        private static Dictionary<string,Container>  GetExtensionNamespaces(Type classType, Dictionary<string,Container> assemblyInfo)
         {
+            
             var extensionClasses = new Dictionary<string, Container>();
 
             foreach (var method in classType.GetMethods(Static | Public | NonPublic))
@@ -54,21 +49,19 @@ namespace AssemblyBrowserLib
                     !method.IsDefined(typeof(ExtensionAttribute), false)) continue;
                 
                 var type = method.GetParameters()[0].ParameterType;
-
-                if (!extensionClasses.ContainsKey(type.Namespace))
-                    extensionClasses.Add(type.Namespace, new Container(type.Namespace, ClassFormatter.Format(type)));
-                    
-                extensionClasses.TryGetValue(type.Namespace, out var container);
-                var methodInfos = new List<MemberInfo>()
-                {
-                    new MemberInfo(MethodFormatter.Format(method) + " — метод расширения", ClassFormatter.Format(classType))
-                    
-                };
                 
-                container.Members.AddRange(methodInfos);
-
+                if (!assemblyInfo.ContainsKey(type.Namespace))
+                    assemblyInfo.Add(type.Namespace, new Container(type.Namespace, ClassFormatter.Format(type)));
+                    
+                Container @class = new Container( ClassFormatter.Format(type), ClassFormatter.Format(type));
+                @class.Members.Add(new MemberInfo(MethodFormatter.Format(method) + " — метод расширения", ClassFormatter.Format(classType)));
+                
+                assemblyInfo.TryGetValue(type.Namespace, out var container);
+                container.Members.Add(@class);
+                
             }
-            return extensionClasses;
+            
+            return assemblyInfo ;
         }
         
         private static Container GetMembers(Type type)
