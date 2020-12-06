@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Keyris\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Keyris\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_AssemblyBrowser.-424001072.00" t="ExcludeRecursive" />
-    <e p="E:\Sharaga\SPP\A\AssemblyBrowser" t="IncludeFlat">
+    <e p="C:\Users\Keyris\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_AssemblyBrowser.246170315.00" t="ExcludeRecursive" />
+    <e p="E:\Sharaga\SPP\AssemblyBrowser" t="IncludeFlat">
       <e p="AssemblyBrowser.sln" t="IncludeFlat" />
       <e p="AssemblyBrowserLib" t="IncludeRecursive">
         <e p="AssemblyBrowser.cs" t="Include" />

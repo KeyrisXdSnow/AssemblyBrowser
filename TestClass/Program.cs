@@ -1,4 +1,5 @@
-﻿﻿using AssemblyBrowserLib;
+﻿﻿using System.IO;
+ using AssemblyBrowserLib;
 
 namespace TestClass
 {
@@ -8,6 +9,7 @@ namespace TestClass
         
         public static void Main(string[] args)
         {
+            
             var assemblyInfo = Browser.GetAssemblyInfo("E:\\Sharaga\\SPP\\A\\AssemblyBrowser\\Tests\\Resources\\TestClass.exe");
             
         }

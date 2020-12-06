@@ -1,6 +1,7 @@
 ﻿﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+ using System.IO;
+ using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using AssemblyBrowserLib.format;
@@ -12,7 +13,7 @@ namespace AssemblyBrowserLib
     {
         public List<Container> GetAssemblyInfo(string filePath)
         {
-         
+            
             var assembly = Assembly.LoadFrom(filePath);
           
             var assemblyInfo = new Dictionary<string,Container>();

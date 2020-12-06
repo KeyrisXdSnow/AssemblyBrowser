@@ -20,7 +20,7 @@
                         </LinearGradientBrush>
                     </Button.OpacityMask>
                     <Button.Background>
-                        <ImageBrush ImageSource="E:\Sharaga\SPP\A\AssemblyBrowser\View\Fkg_ODrcv0w.jpg"/>
+                        <ImageBrush ImageSource="E:\Sharaga\SPP\AssemblyBrowser\View\Fkg_ODrcv0w.jpg"/>
                     </Button.Background> Open
                 </Button>
                 

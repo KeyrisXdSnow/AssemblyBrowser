@@ -1,15 +1,13 @@
-﻿using System;
-using System.Reflection;
-using AssemblyBrowserLib;
+﻿using AssemblyBrowserLib;
 using NUnit.Framework;
 
-namespace Test
+namespace Tests
 {
     [TestFixture]
     public class Tests
     {
         private readonly AssemblyBrowser _browser = new AssemblyBrowser();
-        private const string TestDirectory = "E:\\Sharaga\\SPP\\Laba3\\AssemblyBrowser\\Test\\TestFiles\\";
+        private const string TestDirectory = "E:\\Sharaga\\SPP\\AssemblyBrowser\\Tests\\TestFiles\\";
 
         [Test]
         public void DllBrowserWorkFinishedCorrectly()
@@ -56,7 +54,7 @@ namespace Test
         {
             var assemblyInfo = _browser.GetAssemblyInfo(TestDirectory+"TestClass.exe");
             ;
-            Assert.IsTrue(assemblyInfo[0].Members.Count == 2);
+            Assert.AreEqual(assemblyInfo[0].Members.Count, 3);
         }
         
         [Test]
